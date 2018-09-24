@@ -59,3 +59,5 @@ function gclone()
 {
 	git clone https://github.com/$1
 }
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

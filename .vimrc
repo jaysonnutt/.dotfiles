@@ -14,20 +14,11 @@ endif
 
 call plug#begin('~/.vim/plugged')
 
-" Autocomplete
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'fatih/vim-go'
-Plug 'janko-m/vim-test'
-Plug 'jlanzarotta/bufexplorer'
-Plug 'junegunn/vader.vim'
-Plug 'elmcast/elm-vim'
-Plug 'plasticboy/vim-markdown'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-surround'
-Plug 'mattn/emmet-vim'
-Plug 'mhinz/vim-mix-format'
+Plug 'scrooloose/nerdtree'
+Plug '~/.fzf'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'itchyny/lightline.vim'
 
 call plug#end()
 
@@ -66,6 +57,8 @@ nnoremap B ^				" Move to the beginning of line
 nnoremap E $				" Move to the end of line
 nnoremap $ <Nop>			" Disable $
 nnoremap ^ <Nop>			" Disable ^
+nnoremap <leader>n :NERDTreeToggle<CR>  " Map NerdTree
+nnoremap ; :Files<CR>			" Fuzzy Finder
 
 "" Mappings for window movement when using split screen 
 
