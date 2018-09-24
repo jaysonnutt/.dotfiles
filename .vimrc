@@ -4,6 +4,33 @@ set nocompatible			" Prevents backwards compatibility that might break other set
 let mapleader=","			" Leader is a comma
 set hidden				" Prevents forced saving
 
+" Vim Plug Stuff
+
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+
+" Autocomplete
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'fatih/vim-go'
+Plug 'janko-m/vim-test'
+Plug 'jlanzarotta/bufexplorer'
+Plug 'junegunn/vader.vim'
+Plug 'elmcast/elm-vim'
+Plug 'plasticboy/vim-markdown'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'mattn/emmet-vim'
+Plug 'mhinz/vim-mix-format'
+
+call plug#end()
+
 " Setting variables
 
 set number				" Enable line numbering
