@@ -19,6 +19,7 @@ Plug '~/.fzf'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
+Plug 'qpkorr/vim-renamer'
 
 call plug#end()
 
@@ -57,7 +58,7 @@ nnoremap B ^				" Move to the beginning of line
 nnoremap E $				" Move to the end of line
 nnoremap $ <Nop>			" Disable $
 nnoremap ^ <Nop>			" Disable ^
-nnoremap <leader>n :NERDTreeToggle<CR>  " Map NerdTree
+nnoremap <leader>t :NERDTreeToggle<CR>  " Map NerdTree
 nnoremap ; :Files<CR>			" Fuzzy Finder
 
 "" Mappings for window movement when using split screen 
@@ -66,6 +67,9 @@ inoremap <c-h> <c-w>h
 inoremap <c-l> <c-w>l
 inoremap <c-j> <c-w>j
 inoremap <c-k> <c-w>k
+
+"" Duplicates for nomral mode
+
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 nnoremap <c-j> <c-w>j
