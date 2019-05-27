@@ -20,6 +20,8 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'qpkorr/vim-renamer'
+Plug 'jiangmiao/auto-pairs'
+Plug 'mattn/emmet-vim'
 
 call plug#end()
 
