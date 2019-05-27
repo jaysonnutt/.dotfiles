@@ -21,7 +21,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'qpkorr/vim-renamer'
 Plug 'jiangmiao/auto-pairs'
-Plug 'mattn/emmet-vim'
+Plug 'mattn/emmet-vim' " Try typing html:5 and hitting control+y+,
 
 call plug#end()
 
