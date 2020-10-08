@@ -50,6 +50,7 @@ set noerrorbells			" Disable annoying error sounds
 set title				" Set the window title to the file currently being edited
 set history=1000			" Increase the undo history limit
 set noswapfile				" Disable swap files
+set visualbell				" Disabling the bell
 
 syntax enable				" Turn on syntax highlighting
 
