@@ -1,6 +1,7 @@
 # Aliases
 
-alias ls='ls -FGalhp'
+alias ls='ls -FGalhp --color=auto' 
+alias ll='ls -FGalhp --color=auto'
 alias reload='source ~/.bash_profile'
 alias cp='cp -vf'
 alias mv='mv -iv'
