@@ -91,7 +91,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 configure_prompt() {
-    prompt_symbol=㉿
+    prompt_symbol=@
     [ "$EUID" -eq 0 ] && prompt_symbol=💀
     case "$PROMPT_ALTERNATIVE" in
         twoline)
