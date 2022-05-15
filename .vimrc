@@ -22,6 +22,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'qpkorr/vim-renamer'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim' " Try typing html:5 and hitting control+y+,
+Plug 'iamcco/markdown-preview.nvim'
 
 call plug#end()
 
@@ -77,5 +78,11 @@ nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
+
+"" Markdown Preview Plugin
+
+nmap <C-s> <Plug>MarkdownPreview
+nmap <M-s> <Plug>MarkdownPreviewStop
+nmap <C-p> <Plug>MarkdownPreviewToggle"
 
 colorscheme slate
