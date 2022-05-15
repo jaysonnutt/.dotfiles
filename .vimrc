@@ -22,7 +22,10 @@ Plug 'itchyny/lightline.vim'
 Plug 'qpkorr/vim-renamer'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim' " Try typing html:5 and hitting control+y+,
-Plug 'iamcco/markdown-preview.nvim'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+" For the above Markdown Preview to work you need to run ':source %' and then
+" ':PlugInstall' and then ':call mkdp#util#install()' and then open with
+" ':MarkdownPreview'
 
 call plug#end()
 
